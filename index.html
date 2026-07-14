@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lawn Butler LLC | Lawn Care in Dallas, TX</title>
+  <meta name="description" content="The Lawn Butler LLC provides professional lawn mowing, edging, cleanups, landscaping and more in Dallas, TX. 5.0★ rated. Call (214) 957-9221 for a free quote." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-bg { background-image: linear-gradient(to right, rgba(20,83,45,0.85), rgba(20,83,45,0.55)), url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1920&q=80'); }
+    .cta-bg { background-image: linear-gradient(to right, rgba(22,101,52,0.95), rgba(21,128,61,0.9)), url('https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?auto=format&fit=crop&w=1920&q=80'); }
+    .scroll-smooth { scroll-behavior: smooth; }
+    details > summary { list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+  </style>
+</head>
+<body class="font-sans text-slate-800 scroll-smooth">
+
+  <div class="bg-brand-800 text-white text-sm">
+    <div class="max-w-6xl mx-auto px-4 py-2 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <p class="font-medium">📍 1849 Oates Drive, Dallas, TX 75228 &nbsp;|&nbsp; Opens 7 AM</p>
+      <a href="tel:+12149579221" class="font-bold text-lg hover:text-brand-200 transition">Call (214) 957-9221</a>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-extrabold text-brand-800 tracking-tight">The Lawn Butler <span class="text-brand-600">LLC</span></a>
+      <nav class="hidden md:flex gap-8 text-sm font-semibold text-slate-700">
+        <a href="#services" class="hover:text-brand-700">Services</a>
+        <a href="#reviews" class="hover:text-brand-700">Reviews</a>
+        <a href="#why-us" class="hover:text-brand-700">Why Us</a>
+        <a href="#faq" class="hover:text-brand-700">FAQ</a>
+      </nav>
+      <a href="#quote" class="hidden md:inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold px-5 py-2.5 rounded-full transition shadow">
+        <i data-lucide="phone" class="w-4 h-4"></i> Free Quote
+      </a>
+      <a href="tel:+12149579221" class="md:hidden bg-brand-600 text-white p-2.5 rounded-full">
+        <i data-lucide="phone" class="w-5 h-5"></i>
+      </a>
+    </div>
+  </header>
+
+  <section id="quote" class="hero-bg bg-cover bg-center bg-no-repeat text-white">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+          <span class="text-yellow-300">★★★★★</span> 5.0 Google Rating
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+          Dallas Lawn Care Done Right — Without the Hassle
+        </h1>
+        <p class="text-lg md:text-xl text-green-50 mb-8">
+          Reliable mowing, crisp edging, cleanups, and landscaping from a local, owner-operated crew. Show us your yard and get a free quote today.
+        </p>
+        <div class="flex flex-wrap gap-4 mb-8">
+          <a href="tel:+12149579221" class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-brand-900 font-bold px-7 py-4 rounded-full transition shadow-lg">
+            <i data-lucide="phone-call" class="w-5 h-5"></i> Call (214) 957-9221
+          </a>
+          <a href="#services" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-7 py-4 rounded-full transition">
+            See Services
+          </a>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-green-50">
+          <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-yellow-300"></i> Same-week service</div>
+          <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-yellow-300"></i> Free estimates</div>
+          <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-yellow-300"></i> Licensed & insured</div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-2xl p-6 md:p-8 text-slate-800">
+        <div class="mb-5">
+          <h2 class="text-2xl font-extrabold text-brand-900">Get a Free Quote</h2>
+          <p class="text-slate-500 text-sm mt-1">Most quotes sent within a few hours.</p>
+        </div>
+        <form id="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-semibold mb-1" for="name">Name</label>
+              <input id="name" name="name" type="text" required placeholder="Your name" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-1" for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" required placeholder="(214) 555-1234" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-1" for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-1" for="address">Property Address</label>
+            <input id="address" name="address" type="text" required placeholder="123 Main St, Dallas, TX" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-1" for="service">Service Needed</label>
+            <select id="service" name="service" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-500">
+              <option value="">Select a service...</option>
+              <option value="mowing-edging">Lawn Mowing & Edging</option>
+              <option value="cleanup">Yard Cleanup / Leaf Removal</option>
+              <option value="trimming">Hedge & Shrub Trimming</option>
+              <option value="mulch-beds">Mulching & Flower Beds</option>
+              <option value="fertilization">Fertilization & Weed Control</option>
+              <option value="landscaping">Landscaping Project</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-1" for="message">Tell us about your yard</label>
+            <textarea id="message" name="message" rows="3" placeholder="Size of yard, anything specific you'd like done..." class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-500"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold text-lg px-6 py-3.5 rounded-lg transition shadow">
+            Get My Free Quote
+          </button>
+          <p id="form-status" class="text-center text-sm font-medium hidden"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-brand-50 border-y border-brand-100">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+      <div>
+        <p class="text-4xl font-extrabold text-brand-700">5.0★</p>
+        <p class="text-slate-600 font-medium">Google rating across 8 reviews</p>
+      </div>
+      <div>
+        <p class="text-4xl font-extrabold text-brand-700">Same Week</p>
+        <p class="text-slate-600 font-medium">Next-day visits often available</p>
+      </div>
+      <div>
+        <p class="text-4xl font-extrabold text-brand-700">Local</p>
+        <p class="text-slate-600 font-medium">Owner-operated in Dallas, TX</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <p class="text-brand-600 font-bold uppercase tracking-wide text-sm mb-2">What We Do</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Full-Service Lawn Care in Dallas</h2>
+        <p class="text-slate-600 text-lg">From weekly mowing to seasonal cleanups, we keep your property looking its best.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="bg-brand-50 rounded-xl p-6 hover:shadow-lg transition border border-brand-100">
+          <div class="bg-brand-100 text-brand-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="scissors" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Lawn Mowing & Edging</h3>
+          <p class="text-slate-600">Crisp cuts, clean edges, and a polished finish every visit. Weekly or biweekly plans.</p>
+        </article>
+        <article class="bg-brand-50 rounded-xl p-6 hover:shadow-lg transition border border-brand-100">
+          <div class="bg-brand-100 text-brand-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="trees" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Hedge & Shrub Trimming</h3>
+          <p class="text-slate-600">Shape hedges, trim shrubs, and remove dead growth to keep plants healthy and tidy.</p>
+        </article>
+        <article class="bg-brand-50 rounded-xl p-6 hover:shadow-lg transition border border-brand-100">
+          <div class="bg-brand-100 text-brand-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="trash-2" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Yard Cleanups & Leaf Removal</h3>
+          <p class="text-slate-600">One-time or seasonal cleanup of leaves, branches, and debris so your yard looks fresh.</p>
+        </article>
+        <article class="bg-brand-50 rounded-xl p-6 hover:shadow-lg transition border border-brand-100">
+          <div class="bg-brand-100 text-brand-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="sprout" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Fertilization & Weed Control</h3>
+          <p class="text-slate-600">Targeted treatments to promote thick, green grass and keep weeds out all season long.</p>
+        </article>
+        <article class="bg-brand-50 rounded-xl p-6 hover:shadow-lg transition border border-brand-100">
+          <div class="bg-brand-100 text-brand-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="layers" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Mulching & Flower Beds</h3>
+          <p class="text-slate-600">Fresh mulch installation and bed maintenance to boost curb appeal and protect plants.</p>
+        </article>
+        <article class="bg-brand-50 rounded-xl p-6 hover:shadow-lg transition border border-brand-100">
+          <div class="bg-brand-100 text-brand-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="layout" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Seasonal Landscaping</h3>
+          <p class="text-slate-600">Small landscaping projects, planting, and property enhancements tailored to your space.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <p class="text-brand-600 font-bold uppercase tracking-wide text-sm mb-2">Customer Reviews</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">See What Neighbors Are Saying</h2>
+        <p class="text-slate-600 text-lg">Real 5-star reviews from Dallas homeowners on Google Maps.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+          <div class="text-yellow-400 text-lg mb-3">★★★★★</div>
+          <p class="text-slate-700 mb-4 italic">"Pablo did an excellent job on my lawn and gave me some excellent ideas on what I should do next. Will be working with him again!"</p>
+          <div class="font-bold text-slate-900">Alexis Franklin</div>
+          <div class="text-slate-500 text-sm">2 years ago</div>
+        </article>
+        <article class="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+          <div class="text-yellow-400 text-lg mb-3">★★★★★</div>
+          <p class="text-slate-700 mb-4 italic">"Great customer service! Positive: Responsiveness, Punctuality, Quality..."</p>
+          <div class="font-bold text-slate-900">Ashley Villa</div>
+          <div class="text-slate-500 text-sm">5 years ago · Owner replied</div>
+        </article>
+        <article class="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+          <div class="text-yellow-400 text-lg mb-3">★★★★★</div>
+          <p class="text-slate-700 mb-4 italic">"Positive: Responsiveness, Punctuality, Quality, Professionalism, Value..."</p>
+          <div class="font-bold text-slate-900">Jose Martinez</div>
+          <div class="text-slate-500 text-sm">4 years ago</div>
+        </article>
+      </div>
+      <div class="text-center mt-10">
+        <a href="https://www.google.com/maps/place/The+Lawn+Butler+LLC/@32.8220725,-96.6827365,10z/data=!3m1!4b1!4m6!3m5!1s0x864ea54984e441f7:0x7904a62f4ad5fb6!8m2!3d32.8220725!4d-96.6827365" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-brand-700 font-bold hover:underline">
+          Read all 8 reviews on Google <i data-lucide="external-link" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-us" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <p class="text-brand-600 font-bold uppercase tracking-wide text-sm mb-2">Why Choose Us</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Not Your Average Lawn Crew</h2>
+        <p class="text-slate-600 text-lg">We treat your yard like it's our own and keep communication simple.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="flex gap-4">
+          <div class="bg-brand-100 text-brand-700 w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center">
+            <i data-lucide="map-pin" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Local & Owner-Operated</h3>
+            <p class="text-slate-600">Dallas-based crew led by Pablo, so you deal directly with the person doing the work.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-brand-100 text-brand-700 w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center">
+            <i data-lucide="clock" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">On-Time, Every Time</h3>
+            <p class="text-slate-600">Punctuality is one of the things customers mention most. We respect your schedule.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-brand-100 text-brand-700 w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Great Communication</h3>
+            <p class="text-slate-600">Quick responses, clear quotes, and honest advice about your lawn.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-brand-100 text-brand-700 w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center">
+            <i data-lucide="wallet" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Fair, Transparent Pricing</h3>
+            <p class="text-slate-600">No hidden fees. Free quotes with straightforward rates for every job.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-brand-100 text-brand-700 w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Licensed & Insured</h3>
+            <p class="text-slate-600">Peace of mind while we're on your property. Safety and quality come first.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-brand-100 text-brand-700 w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center">
+            <i data-lucide="heart" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Satisfaction Guaranteed</h3>
+            <p class="text-slate-600">If something isn't right, we'll make it right. Your happiness is the goal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-20 bg-brand-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <p class="text-brand-600 font-bold uppercase tracking-wide text-sm mb-2">FAQ</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Common Questions</h2>
+      </div>
+      <div class="space-y-4">
+        <details class="bg-white rounded-xl shadow-sm border border-slate-100 group" open>
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-slate-900">
+            What areas do you service?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="px-5 pb-5 text-slate-600">The Lawn Butler LLC is based in Dallas, TX and serves Dallas and the surrounding neighborhoods. Not sure if we cover you? Just call or send us your address.</p>
+        </details>
+        <details class="bg-white rounded-xl shadow-sm border border-slate-100 group">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-slate-900">
+            How do I get a quote?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="px-5 pb-5 text-slate-600">Fill out the form on this page or call/text (214) 957-9221. Most quotes are sent within a few hours, often same day.</p>
+        </details>
+        <details class="bg-white rounded-xl shadow-sm border border-slate-100 group">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-slate-900">
+            Do I need to be home while you work?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="px-5 pb-5 text-slate-600">Usually not. As long as we have access to your yard and any gates are unlocked, we can complete the work and send you an update.</p>
+        </details>
+        <details class="bg-white rounded-xl shadow-sm border border-slate-100 group">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-slate-900">
+            How often should my lawn be mowed?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="px-5 pb-5 text-slate-600">During the growing season, weekly mowing is ideal for a clean, healthy lawn. Biweekly service is also available depending on your lawn and budget.</p>
+        </details>
+        <details class="bg-white rounded-xl shadow-sm border border-slate-100 group">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-slate-900">
+            What payment methods do you accept?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="px-5 pb-5 text-slate-600">We accept cash, check, and popular digital payment apps. Details are provided with your invoice.</p>
+        </details>
+        <details class="bg-white rounded-xl shadow-sm border border-slate-100 group">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-slate-900">
+            Are you licensed and insured?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="px-5 pb-5 text-slate-600">Yes. The Lawn Butler LLC is a licensed and insured lawn care company, so your property is protected.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-bg bg-cover bg-center bg-no-repeat text-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Ready for a Lawn You'll Love?</h2>
+      <p class="text-lg md:text-xl text-green-50 mb-8 max-w-2xl mx-auto">
+        Join your Dallas neighbors who trust The Lawn Butler LLC. Get your free quote or call now — same-week appointments available.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="tel:+12149579221" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-brand-900 font-bold px-8 py-4 rounded-full transition shadow-lg text-lg">
+          <i data-lucide="phone-call" class="w-5 h-5"></i> Call (214) 957-9221
+        </a>
+        <a href="#quote" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-green-50 text-brand-900 font-bold px-8 py-4 rounded-full transition text-lg">
+          Get Free Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-300 py-12">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+      <div>
+        <h3 class="text-2xl font-extrabold text-white mb-2">The Lawn Butler LLC</h3>
+        <p class="mb-4">Local lawn care company proudly serving Dallas, TX. Reliable mowing, cleanups, and landscaping from a crew that cares.</p>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-brand-400"></i> 1849 Oates Drive, Dallas, TX 75228</li>
+          <li class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-brand-400"></i> Tuesday: 7 AM – 7 PM (call for availability)</li>
+          <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-brand-400"></i> <a href="tel:+12149579221" class="hover:text-white">(214) 957-9221</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="rounded-xl overflow-hidden shadow-lg h-64">
+          <iframe
+            title="The Lawn Butler LLC location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.455309238056!2d-96.6853115!3d32.8220725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864ea54984e441f7%3A0x7904a62f4ad5fb6!2sThe%20Lawn%20Butler%20LLC!5e0!3m2!1sen!2sus!4v1720800000000!5m2!1sen!2sus"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-slate-800 text-sm text-center text-slate-500">
+      © <span id="year"></span> The Lawn Butler LLC. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    lucide.createIcons();
+
+    const form = document.getElementById('quote-form');
+    const status = document.getElementById('form-status');
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      status.classList.remove('hidden', 'text-red-600', 'text-brand-700');
+      status.textContent = 'Sending...';
+
+      const action = form.getAttribute('action');
+      if (!action || action.includes('YOUR_FORM_ID')) {
+        status.classList.add('text-red-600');
+        status.textContent = 'Form not configured yet. Please replace YOUR_FORM_ID in index.html or call (214) 957-9221.';
+        return;
+      }
+
+      try {
+        const response = await fetch(action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          status.classList.add('text-brand-700');
+          status.textContent = 'Thanks! We received your request and will contact you soon.';
+          form.reset();
+        } else {
+          throw new Error('Server error');
+        }
+      } catch (error) {
+        status.classList.add('text-red-600');
+        status.textContent = 'Something went wrong. Please call (214) 957-9221 and we\u2019ll help you right away.';
+      }
+    });
+  </script>
+</body>
+</html>
